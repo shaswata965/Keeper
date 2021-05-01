@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    font-family: 'McLaren', cursive;
+    
+}
+
+body{
+    background-color: #ffd3b4;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.header{
+    background-color: #eeb76b;
+    width: 100vw;
+    padding: 1rem;
+}
+
+.note{
+    background-color: white;
+    width: 40vw;
+    margin: 4vh 35vw 0 33vw;
+    border-radius: .5rem;
+    box-shadow: 0 0 .4rem black;
+    padding-bottom: 2vw;
+}
+
+.title,.content{
+    height: 6vh;
+    width: 20vw;
+    margin: 2vh 4vw 1vh 3vw;
+    border:none;
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+.title:focus,.content:focus{
+    outline:none;
+    border-bottom: solid black;
+}
+
+
+.card{
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 0 0 .2rem black;
+    margin: 4vh 2vw 4vh 2vw;
+}
+
+h3{
+    margin: 2vh 2vw;
+    font-size: 1.75vw;
+    padding: 2vh 0 0 0; 
+}
+
+.card-content{
+    font-size: 1.25vw;
+    padding: 0 0 2vh 0; 
+    margin: 1vh 2vw 1vh 2vw;
+}
+
+.delete{
+    color:#d18b28;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: .5rem;
+    margin: 2vh 0 2vh 1vw;
+}
+
+.delete:active{
+    border: solid .1rem black;
+}
+
+.delete:hover{
+    color: #aa690e ;
+}
+
+.overall{
+    margin-top:-4vh;
+}
+
+img{
+    height:4vh;
+    width: 2vw;
+    color:#eeb76b;
+}
+
+.footer{
+    flex-basis: 100vw;
+    text-align: center;
+}
+
+form.button button{
+    position: absolute;
+    background: #d18b28;
+    color: #fff;
+    margin: 8vh 0 0 0;
+}
+
+@media(max-width:800px){
+
+    .note{
+        width:90vw;
+        margin: 4vh 10vw 4vh 10vw;
+    }
+    .title,.content{
+        height: 10vh;
+        width: 40vw;
+        margin: 2vh 3vw 1vh 3vw;
+        font-size: 3vw;
+    }
+    form.button button{
+        background: #d18b28;
+        color: #fff;
+        margin: 8vh 0 0 18vw;
+    }
+    
+    h3{
+        font-size: 3.25vw;
+    }
+    .card-content{
+        font-size: 2.5vw;
+    }
+    .card{
+        width: 90vw;
+        margin: 4vh 5vw 4vh 5vw;
+
+    }
+    .delete{
+        height: 6vh;
+        width:12vw;
+    }
+
+}
